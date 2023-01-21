@@ -1,0 +1,62 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            #logo 
+              img(src="/static/img/kindpng_344552.png", alt="")
+              | KDA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/contact") Contact]
+    section#introSection 
+        div WELCOME TO DANCE CLUB 
+
+    section#mission
+        h2 OUR MISSION
+        .card
+          h3 Dance the way you like
+          .card-box 
+            .card-img 
+              img(src="/static/img/1.png")
+            .card-content 
+              p This is the new game
+
+        .card
+          h3 Learn Everyday
+          .card-box 
+            .card-img 
+              img(src/static/img/2.png")
+            .card-content 
+              p This is the new game
+
+        .card
+          h3 Get fit
+          .card-box 
+            .card-img 
+              img(src="/static/img/3.png")
+            .card-content 
+              p This is the new game
+
+    section#sponsorSection 
+        h3 OUR SPONSORS 
+        #sponsors 
+          img(src="/static/img/hewlett-packard-logo-black-and-white.png", alt="sponsor image", class="sp")
+          img(src="/static/img/goldman-sachs-logo-black-and-white.png", alt="sponsor image", class="sp")
+          img(src="/static/img/kisspng-iphone-6-plus-apple-logo-ipad-company-apple-logo-transparent-background-5a72321bb03fb5.4861993715174333717219.png", alt="sponsor image", class="sp")
+          img(src="/static/img/kisspng-tesla-roadster-tesla-motors-tesla-model-s-tesla-mo-5af5cb61721020.8034357715260578254672.png", alt="sponsor image", class="sp")
+
+
+
+    footer#footer 
+        | Copyright © 2019 KDA.com | All rights reserved
+
+    
+    script
+      include ../static/index.js
